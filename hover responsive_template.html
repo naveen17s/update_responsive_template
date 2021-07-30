@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)file:///E:/visual_coderr/New_assignments/new_templated/responsive_tem/responsedpage-1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+        <title>
+              hover responsive_template
+        </title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@450');
+                   *{
+                     box-sizing: border-box;
+                     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    }
+                   .img{
+                     max-width: 100%;  
+                       }
+                   .body{
+                       background-color: blueviolet;
+                       margin: 0;
+                   }
+                   .master{
+                        width: 100%;
+                        margin: auto;
+                        display: flex;           
+                   }
+                   
+                   .col1{
+                        width: 20%;
+                        margin: 0;
+                        position: relative;
+                        background-color: rgb(56, 56, 56);
+                        min-height: 100vh;  
+
+                   }
+                   .stimage{
+                        padding: 30px 0px 30px 0px;
+                    }
+                    .emirate{
+                        width: 100%;
+                        min-height: 150px;
+                        background-color: rgb(163, 6, 6);
+                    }
+                    .menuguard{
+                        display: flex;
+                        flex-direction: column;
+                        font-weight: lighter;
+                        text-align: center;
+                    }
+                    .home p, .about p, .service p, .product p, .contact p{
+                       margin: 10px;
+                   }
+                    .home, .about, .service, .product, .contact{
+                       border-left: 5px solid;
+                       background-color: rgb(44, 43, 43);
+                       transition-duration: 1.5s;
+                       transition-timing-function: ease-in-out;
+                       transition-delay: 1ms;
+                   }
+                   .home{
+                       border-left-color: rgb(42, 150, 221);
+                       color:  rgb(42, 150, 221);    
+                   }
+                   .about{
+                       border-left-color: rgb(255, 212, 22);
+                       color:  rgb(255, 212, 22);
+                   }
+                   .service{
+                       border-left-color: rgb(176, 2, 245);
+                       color:  rgb(176, 2, 245);
+                   }
+                   .product{
+                       border-left-color: rgb(52, 226, 36);
+                       color: rgb(52, 226, 36);
+                   }
+                   .contact{
+                       border-left-color: rgb(231, 65, 23);
+                       color:  rgb(231, 65, 23); 
+                   }
+                   .home:hover, .about:hover, .service:hover, .product:hover, .contact:hover{
+                       color:  white;
+                       width:  100%;
+                       cursor: pointer;
+                   }
+                   .home:hover{
+                        background-color: rgb(42, 150, 221);   
+                   }
+                   .about:hover{
+                       background-color: rgb(255, 212, 22);
+                   }
+                   .service:hover{
+                       background-color: rgb(176, 2, 245);
+                   }
+                   .product:hover{
+                       background-color: rgb(52, 226, 36);
+                   }
+                   .contact:hover{
+                       background-color: rgb(231, 65, 23);
+                   }
+                   button, .radio, img{
+                       cursor: pointer;
+                   }
+                   .col2{
+                       width:80%;
+                       margin: auto;
+                          
+                   }
+                   .background_flight{
+                       background-color: rgb(98, 98, 211);
+                       background-image: url(resize/aeroplanedblue.jpg);
+                       background-position: top;
+                       background-repeat: no-repeat;
+                       background-attachment: local;
+                       background-size: cover;
+                       text-align: center;
+                       color: white; 
+                       padding: 70px 0px 10px 0px;                      
+                   }
+                   .title1{
+                       padding: 50px 0px 0px 0px; 
+                   }
+                   .row4{
+                       padding: 0px 0px 40px 0px;
+                   }
+                   .row5{
+                       padding: 60px 0px 0px 0px;
+                   }
+                   .readbutton{
+                       background-color: rgb(74, 74, 241);
+                       padding: 10px;
+                       border-radius: 25px;
+                       font-weight: bolder;
+                       color: white;
+                   }
+                   .welcomebox{
+                       margin: auto;
+                       display: flex;
+                       flex-direction: column;
+                       padding: 0px 50px 0px 50px;
+                   }
+                   .welcome{
+                       text-align: center;
+                       padding: 60px 0px 60px 0px;
+                   }
+                   .title2{
+                       color:rgb(87, 87, 243);
+                       font-weight: lighter;
+                   }
+                   .para2{
+                       color: rgb(138, 138, 138);
+                   }
+                   .lineyellow{
+                       padding: 1px;
+                       background-color: rgb(255, 212, 22);  
+                   }
+                   .aboutusbut{
+                       background-color: rgb(255, 212, 22);
+                       color: white;
+                       padding: 5px 15px 5px 15px;
+                       border-radius: 0px 0px 10px 10px;
+                       font-weight: lighter;
+                       border: 1px solid rgb(255, 212, 22);
+                   }
+                  .aboutus_img_row{
+                      padding: 50px 0px 50px 0px;
+                      display: flex;
+                      flex-direction:column;
+                  }
+                  .about_rowflex{
+                        display: flex;
+                        flex-wrap: nowrap;
+                        justify-content: space-between;
+                        padding: 0px 0px 20px 0px;
+                  }
+                  .toon1, .toon2, .toon3{
+                        width: 100%;
+                        min-height: 450px;
+                        padding: 10px;
+                  }
+                  .toonname1, .toonname2, .toonname3 {
+                       text-align: center;
+                       color: rgb(255, 212, 22);
+                       font-weight: lighter;
+                   }
+                   .toonname1a, .toonname2b, .toonname3c {
+                       text-align: center;
+                       color: rgb(177, 172, 168);
+                   }
+                   .management_team_rowflex {
+                        margin: 0;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                   .digitaldisplay{  
+                        width:100%;
+                        height: 250px;
+                   }
+                   .management_theory {
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .management_imge{
+                        width: 30%;
+                    }
+                   .lineviolet{
+                       padding: 1px;
+                       background-color: rgb(176, 2, 245);  
+                   }
+                   .servicesbut{
+                       background-color: rgb(176, 2, 245);
+                       color: white;
+                       padding: 5px 15px 5px 15px;
+                       border-radius: 0px 0px 10px 10px;
+                       font-weight: lighter;
+                       border: 1px solid rgb(176, 2, 245);
+                   }
+                    .management_title{
+                       font-weight: lighter;
+                       color: rgb(255, 212, 22); 
+                    }
+                    .management{
+                        color: rgb(177, 172, 168);
+                    }
+                    .service_row{
+                        padding: 50px 0px 50px 0px;
+                        display: flex;
+                        flex-direction:column;   
+                    }
+                    .service_rowflex{
+                        display: flex;
+                        flex-wrap: nowrap;
+                        justify-content: space-between;
+                        padding: 0px 0px 20px 0px;
+                    }
+                    .bestsup_col, .fullyresponse_col, .unlimitlayout_col{
+                        text-align: center;
+                        background-color: rgb(176, 2, 245);
+                        padding: 20px;
+                        border-radius: 20px;
+                    }
+                    .contbestsup, .reponsedesign, .layoutoptions {
+                        text-align: center;
+                        color: white;
+                        font-weight: lighter;
+                    }
+                    .ourskills_rowflex{  
+                        margin: 0;
+                        display: flex;
+                        padding: 20px 0px 0px 0px;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: stretch;
+                    }    
+                    .graphics, .htmll, .wordpress, .marketing{
+                       white-space: nowrap;
+                       background-color: rgb(176, 2, 245);
+                       border-radius: 4px;
+                       padding: 0px 50px 0px 50px;
+                       font-weight: lighter;
+                       font-size: smaller;
+                       text-align: left;
+                       color: white;
+                   }
+                   .graphics{
+                       border-right: 10px solid;
+                       border-right-color: rgb(201, 193, 193);
+                   }
+                   .htmll{
+                       border-right: 25px solid;
+                       border-right-color: rgb(201, 193, 193);
+                   } 
+                   .wordpress{
+                       border-right: 30px solid;
+                       border-right-color: rgb(201, 193, 193);
+                   } 
+                   .marketing{
+                       border-right: 15px solid;
+                       border-right-color: rgb(201, 193, 193);
+                   }  
+                   .our_skill_para{
+                       width: 50%; 
+                   } 
+                   .ourskills_percentages{
+                       width: 30%;
+                       display: flex;
+                       flex-direction: column;
+                       flex-wrap: nowrap;
+                       font-size: smaller;
+                       justify-content: space-evenly;
+                   }
+                   .linegreen{
+                       padding: 1px;
+                       background-color: rgb(52, 226, 36);  
+                   }    
+                   .portbut{
+                       background-color: rgb(52, 226, 36);
+                       color: white;
+                       padding: 5px 15px 5px 15px;
+                       border-radius: 0px 0px 10px 10px;
+                       font-weight: lighter;
+                       border: 1px solid rgb(52, 226, 36);
+                   }
+                   .skill_title{
+                       color:rgb(176, 2, 245);
+                       font-weight: lighter;
+                   }
+                   .skill_theory{
+                       color: rgb(138, 138, 138);
+                   }
+                   .port1_rowflex, .port2_rowflex{
+                       display: flex;
+                       justify-content: space-between;
+                       padding: 30px 0px 30px 0px;
+                   }
+                   .port_img1, .port_img2, .port_img3, .port_img4, .port_img5, .port_img6{
+                       padding :10px;
+                       width: 100%;
+                       min-height: 450px;
+                   }
+                   .previewbox_img1, .previewbox_img2, .previewbox_img3, .previewbox_img4, .previewbox_img5, .previewbox_img6, 
+                   .portname1, .portname2, .portname3, .portname4, .portname5, .portname6, .loadbuttonblock{
+                       text-align: center;
+                       color:rgb(52, 226, 36);
+                       font-weight: lighter;
+                   }
+                   .loadmorebut{
+                       color: white;
+                       padding: 5px;
+                       background-color: rgb(52, 226, 36);
+                       border: 1px solid rgb(52, 226, 36);
+                   }
+                   .loadbuttonblock{
+                       padding: 0px 0px 40px 0px;
+                   }
+                   .line_red{
+                       padding: 1px;
+                       background-color: rgb(231, 65, 23);  
+                   }
+                   .contact_but{
+                       background-color: rgb(231, 65, 23);
+                       color: white;
+                       padding: 5px 15px 5px 15px;
+                       border-radius: 0px 0px 10px 10px;
+                       font-weight: lighter;
+                       border: 1px solid rgb(231, 65, 23);
+                   }
+                   .map1{
+                       padding: 50px 0px 50px 0px;
+                       width: 100%;
+                       min-height: 450px; 
+                   }
+                   .map_img1{
+                       border: 10px solid rgb(177, 173, 173);
+                       width: 100%;
+                       min-height: 450px;
+                   }
+                   .persondetail_flex1 {
+                       display: flex;
+                       justify-content: space-evenly;
+                   }
+                   .persondetail_flex2 {
+                       display: flex;
+                   }
+                   .person_name, .person_email, .select_subject{
+                       width: 100%;
+                       height: 80px;
+                   }
+                   .name1, .name2, .name3, .detailboxed{
+                        border-radius: 0px; 
+                        border-width: 1px;  
+                   }
+                   .name3{
+                       padding: 1px 50px 1px 50px;   
+                   }
+                   .messagebox{
+                       display: flex;
+                       flex-direction: column;
+                       align-items: flex-start;       
+                       width: 100%;
+                       height: 100%;
+                   }
+                   .detailboxed{
+                       width: 100%;
+                       height: 100px;
+                   }
+                   .detailbox{
+                       padding: 0px 0px 50px 0px;
+                   }
+                   .sendmsg{
+                       margin-top: 20px;
+                       color: white;
+                       padding: 5px;
+                       background-color: rgb(231, 65, 23);
+                   } 
+                   .footerbox {
+                       border: 1px solid white;
+                       display: flex;
+                       flex-direction: column;
+                       background-color: rgb(44, 43, 43);    
+                   }
+                   .footericons {
+                       text-align: center;
+                       display: flex;
+                       justify-content: center;
+                       background-color: rgb(56, 56, 56);
+                       padding: 10px 0px 100px 0px;
+                   }
+                   .copyright{
+                       padding: 25px 50px 25px 50px;
+                       color: white;
+                   }
+                   .facebook, .instagram, .whatsup, .youtube, .indeed{
+                       padding: 5px;
+                   }
+                   
+                   @media only screen and (max-width:768px){
+                    .master{
+                           display: flex;
+                           flex-direction: column;
+                       }
+                       .col1{
+                           min-height: 40vh;
+                           width: 100%;
+                           margin: auto;
+                       }
+                       .about_rowflex{
+                           display: flex;
+                           flex-direction: column;
+                       }
+                       .col2{
+                           width: 100%;
+                       }
+                       .welcomebox{
+                           width: 90%;
+                       }
+                       .map_img1 {
+                           border: 5px solid rgb(245, 240, 240);
+                       }
+                       .bestsup_col, .fullyresponse_col, .unlimitlayout_col {
+                            margin: 10px;
+                       } 
+                       .persondetail_flex1, .persondetail_flex2 {
+                            display: flex;
+                            justify-content: space-around;
+                            flex-direction: column;
+                            flex-wrap: nowrap;
+                      }
+                      .port_img1, .port_img2, .port_img3, .port_img4, .port_img5, .port_img6 {
+                            padding: 5px;
+                        }
+                   }
+                   @media only screen and (max-width:425px){
+                     .welcomebox{
+                           padding: 0px 25px 0px 25px;
+                       }
+                     .management_team_rowflex{
+                           margin: 0;
+                           display: flex;
+                           justify-content: space-between;
+                           align-items: stretch;
+                           align-content: center;
+                           flex-direction: column;
+                         }
+                         .bestsup_col, .fullyresponse_col, .unlimitlayout_col {
+                            margin: 10px;
+                        }   
+                         .digitaldisplay {
+                           width: 100%;
+                           height: 150px;
+                         }
+                         .service_rowflex {
+                           display: flex;
+                           flex-wrap: nowrap;
+                           padding: 0px 0px 20px 0px;
+                           flex-direction: column;
+                           align-items: stretch;
+                            }
+                        .ourskills_rowflex {
+                           margin: 0;
+                           display: flex;
+                           padding: 20px 0px 0px 0px;
+                           flex-direction: column;
+                           align-items: stretch;
+                            }
+                        .ourskills_percentages {
+                           display: flex;
+                           flex-direction: column;
+                           font-size: smaller;
+                           justify-content: space-evenly;
+                           margin: auto;
+                            }
+                        .port1_rowflex, .port2_rowflex {
+                           display: flex;
+                           justify-content: space-between;
+                           flex-direction: column;
+                            }
+                        .port_img1, .port_img2, .port_img3, .port_img4, .port_img5, .port_img6 {
+                            padding: 5px;
+                        }
+                        .map_img1 {
+                           border: 3px solid rgb(245, 240, 240);
+                            }
+                        .persondetail_flex1, .persondetail_flex2 {
+                            display: flex;
+                            justify-content: space-around;
+                            flex-direction: column;
+                            flex-wrap: nowrap;
+                            }
+                        .graphics, .htmll, .wordpress, .marketing {
+                            margin: 5px;
+                        }
+                        .tw, .insta, .w_up, .yt, .in{
+                            width:100%;
+                            height:20px;
+                            }
+                            .management_theory {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    .management_imge{
+                            width: 100%;
+                        }
+                        .our_skill_para{
+                            width: 100%; 
+                   } 
+                   .ourskills_percentages{
+                            width: 100%;
+                    }
+        }
+
+   </style></head>
+     
+   <body>
+<div class="master">
+        <div class="col1">
+           <div class="stimage">
+                <img src="./hover responsive_template_files/thumb2-emirates-airline-emblem-emirates-logo-airlines.jpg" alt="loading_image" class="emirate">
+           </div> 
+           <div class="menuguard">
+                <span class="home"><p>HOME</p></span>
+                <span class="about"><p>ABOUT US</p></span>
+                <span class="service"><p>SERVICE</p></span>
+                <span class="product"><p>PRODUCT</p></span>
+                <span class="contact"><p>CONTACT</p></span>
+           </div>
+        </div>
+ <div class="col2">
+            <div class="background_flight">
+                <div class="row3">
+                     <h1 class="title1">RESPONSIVE LAYOUT</h1>
+                     <p class="para1">Review the key moments in our airline’s history and how we grew from modest beginnings <br>
+                                      a global aviation player recognised for our industry-leading products and services.
+                     </p>
+                </div> 
+                <div class="row4">
+                     <button class="readbutton">READ MORE</button>
+                </div>
+                <div class="row5">
+                    <form method="GET">
+                    <input type="radio" id="radio1" name="row2" value="none" class="radio">
+                    <lable for="radio1" class="radio"></lable>
+                    <input type="radio" id="radio2" name="row2" value="none" class="radio">
+                    <lable for="radio2" class="radio"></lable>
+                    <input type="radio" id="radio3" name="row2" value="none" class="radio">
+                    <lable for="radio3" class="radio"></lable>
+                    </form>
+               </div> 
+            </div>
+ <div class="welcomebox">
+          <div class="welcome">
+                     <h1 class="title2">WELCOME TO TEMPLATE</h1>
+                        <p class="para2">We inspire travelers around the world with our growing network of worldwide destinations,<br>
+                                         regionally inspired cuisine, and world-class service.</p> 
+        </div>
+        <div class="yellow">
+        <div class="lineyellow"></div>
+                    <button class="aboutusbut">ABOUT US</button>
+        </div>
+        <div class="aboutus_img_row">
+               <div class="about_rowflex">
+                    <div class="com_md">
+                        <img src="./hover responsive_template_files/girlss.png" alt="loading_image" class="toon1">
+                        <h3 class="toonname1">CHRISTINA WELLDONE</h3>
+                        <p class="toonname1a">Marketing Director</p>
+                    </div>
+                    <div class="com_ce">
+                        <img src="./hover responsive_template_files/staff.png" alt="loading_image" class="toon2">
+                        <h3 class="toonname2">TERI BELLE</h3>
+                        <p class="toonname2b">Creative Executive</p>
+                    </div>
+                    <div class="com_cp">
+                        <img src="./hover responsive_template_files/anchor.png" alt="loading_image" class="toon3">
+                        <h3 class="toonname3">TAWANA CHERRY</h3>
+                        <p class="toonname3c">Company President</p>
+                    </div>
+                </div>
+                <div class="management_team_rowflex">
+                    <div class="management_theory">
+                        <h2 class="management_title"> OUR MANAGEMENT TEAM</h2>
+                             <p class="management">
+                                Airline Management Group creates dynamic, pragmatic, and profitable solutions to the airline industry
+                                with a focus on delivering shareholder return and economic longevity.
+                                Our focus is on taking responsibility for implementation.
+                               <br><br>
+                                Our customer focus, network, knowledge and expertise provide value to investors and shareholders as
+                                we create and implement innovative changes in the industry.
+                                Our collective track record extends across legacy to low cost carriers, 
+                                from start-ups to turnarounds in both government and private ownership.  
+                            </p>
+                    </div>
+                    <div class="management_imge">
+                        <img src="./hover responsive_template_files/gettyimages_aero.jpg" alt="loading-image" class="digitaldisplay">
+                    </div>
+                 </div>
+      </div>
+      <div class="violet">
+                 <div class="lineviolet"></div>
+                        <button class="servicesbut">SERVICES</button>
+      </div>
+      <div class="service_row">
+         <div class="service_rowflex">
+                   <div class="bestsup_col">
+                        <p class="contbestsup">The Best Support Ever...</p>
+                    </div>
+                    <div class="fullyresponse_col">
+                        <p class="reponsedesign">Fully Responsive Design</p>
+                    </div>
+                    <div class="unlimitlayout_col">
+                        <p class="layoutoptions">Unlimited Layouts Options</p>
+                    </div>
+        </div>
+         <div class="ourskills_rowflex">
+             <div class="our_skill_para">
+                    <h2 class="skill_title">OUR SKILLS</h2>
+                        <p class="skill_theory">
+                                Airline Management Group creates dynamic, pragmatic, and profitable solutions to the airline industry
+                                with a focus on delivering shareholder return and economic longevity.
+                                Our focus is on taking responsibility for implementation.</p>
+                        </div>                     
+                        <div class="ourskills_percentages">
+                                <div class="graphics">GRAPHICS 90%</div>
+                                <div class="htmll">HTML 75%</div>
+                                <div class="wordpress">WORDPRESS 66%</div>
+                                <div class="marketing">MARKETING 88%</div>
+                        </div>
+          </div>
+         </div>
+         <div class="green">
+                <div class="linegreen"></div>
+                    <button class="portbut">PORTFOLIO</button>
+         </div>
+    <div class="photosblock">
+                <div class="port1_rowflex">
+                      <div class="previewbox_img1">
+                          <img src="./hover responsive_template_files/andres-dallimonti.jpg" alt="loading_image" class="port_img1">
+                          <h3 class="portname1">ANDRES DALLIMONT</h3>
+                      </div>
+                      <div class="previewbox_img2">
+                          <img src="./hover responsive_template_files/grayblack.jpg" alt="loading_image" class="port_img2">
+                          <h3 class="portname2">GRAY LOOK</h3>
+                      </div>
+                      <div class="previewbox_img3">
+                          <img src="./hover responsive_template_files/ehud-neuhau.jpg" alt="loading_image" class="port_img3">
+                          <h3 class="portname3">EHUD NEUHAU</h3>
+                      </div>
+                </div>
+                <div class="port2_rowflex">
+                      <div class="previewbox_img4">
+                           <img src="./hover responsive_template_files/passport.png" alt="loading_image" class="port_img4">
+                           <h3 class="portname4">PASSPORT</h3>
+                      </div>
+                      <div class="previewbox_img5">
+                           <img src="./hover responsive_template_files/jc-gellidon-.jpg" alt="loading_image" class="port_img5">
+                           <h3 class="portname5">FRONT CHANNEL</h3>
+                      </div>
+                      <div class="previewbox_img6">
+                           <img src="./hover responsive_template_files/clba-add.jpg" alt="loading_image" class="port_img6">
+                           <h3 class="portname6">NEW YORK</h3>
+                      </div>
+                </div>
+                <div class="loadbuttonblock">
+            <button class="loadmorebut">LOAD MORE</button>
+        </div>
+        </div>
+        <div class="red">
+                <div class="line_red"></div>
+                <button class="contact_but">CONTACT US</button>
+        </div> 
+        <div class="map1">
+            <iframe src="./hover responsive_template_files/embed.html" style="border:0;" allowfullscreen="" loading="lazy" class="map_img1"></iframe>
+                <!---<img src="resize/re-areo/chennai-airport-map.png" alt="loading_image" class="map_img1">--->
+        </div>
+        <div class="detailbox">
+            <form method="GET">
+                <div class="persondetail_flex1">
+                     <div class="person_name">    
+                           <p class="namedetail">Name :</p> 
+                           <input type="text" id="named" name="Name" value="" class="name1" placeholder="(eg): Naveen">
+                     </div>  
+                     <div class="person_email">    
+                           <p class="emaildetail">Email :</p>
+                           <input type="email" id="emailid" name="Email" value="" class="name2" placeholder="(eg): naveenmahadev17@gmail.com">
+                     </div>
+                     <div class="select_subject">
+                           <lable for="flight"><p class="subjectdetail">Subject :</p></lable>
+                           <select id="flight" name="flight" class="name3">
+                           <option value="others">Others</option>    
+                           <option value="IndiGo">IndiGo</option>
+                           <option value="Air India">Air India</option>
+                           <option value="SpiceJet">SpiceJet</option>
+                           <option value="GoAir">GoAir</option> 
+                           </select>
+                     </div>
+                </div>
+                <div class="persondetail_flex2">
+                     <div class="messagebox">
+                           <p class="msgbox">Message :</p>
+                           <textarea name="messgage" class="detailboxed"></textarea>
+                           <input type="submit" value="SEND MESSAGE" class="sendmsg">          
+                     </div> 
+                </div>
+            </form>      
+        </div>
+    </div>
+        <div class="footerbox">
+                <div class="footericons">
+                            <div class="facebook"><img src="./hover responsive_template_files/cr-indeed.png" alt="loading_img" class="tw"></div>
+                            <div class="instagram"><img src="./hover responsive_template_files/cr-indeed.png" alt="loading_img" class="insta"></div>
+                            <div class="whatsup"><img src="./hover responsive_template_files/cr-indeed.png" alt="loading_img" class="w_up"></div>
+                            <div class="youtube"><img src="./hover responsive_template_files/cr-indeed.png" alt="loading_img" class="yt"></div>
+                            <div class="indeed"><img src="./hover responsive_template_files/cr-indeed.png" alt="loading_img" class="in"></div>
+                </div>            
+                <div class="copyright">Copyright@2021 Flex</div>         
+        </div>
+</div>       
+
+</div></body></html>
